@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+			<title>Forms</title>
+
+			<meta name="description" content=""> 
+			<meta name="viewport" content="width=device-width, intial-scale=1">
+
+			<!-- Place Favicon.ico in the root dierectory -->
+
+			<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+		<!-- Parent Element for all forms -->
+	<form action="path/to/serverscript.php" method="post">
+
+		<!-- Fieldset groups like elements -->
+		<fieldset>
+
+			<legend>Legend</legend>
+
+			<div>
+				<!--- A way of selecting many options -->
+				<h4>Radio Buttons</h4>
+				<label for="radio-choice-1">Choice 1</label>
+				<input type="radio" name="radio-choice" id="radio-choice-1" value="choice-1"/>
+
+				<label for="radio-choice-2">Choice 2</label>
+				<input type="radio" name="radio-choice" id="radio-choice-2" value="choice-2"/>
+
+				<label for="radio-choice-3">Choice 3</label>
+				<input type="radio" name="radio-choice" id="radio-choice-3" value="choice-3"/>
+
+				<label for="radio-choice-4">Choice 4</label>
+				<input type="radio" name="radio-choice" id="radio-choice-4" value="choice-4"/>
+
+				<!-- <input type="radio" name="r" id="r1" value="1" />
+				<input type="radio" name="r" id="r2" value="2" /> -->
+			</div>
+
+			<div>
+				<!-- Value is what gets sent to server --> <!-- like chose NY, choice 4 is server -->
+				<!-- another method of selectin many options-->
+
+				<h4>Select Dropdown</h4>
+				<select name="select-choice" id="select-choice">
+					<option value="Choice_1">SC</option>
+					<option value="Choice_2">NC</option>
+					<option value="Choice_3">LA</option>
+					<option value="Choice_4">NY</option>
+					<option value="Choice_5">KY</option>
+				</select>
+			</div>
+
+		<fieldset>
+				<!--check box doesnt need value, it is either checked or uncheck-->
+			<div>
+				<h4>Checkbox</h4>
+				<label for="checkbox-1">Checkbox 1</label>
+				<input type="checkbox" name"checkbox-1" id="checkbox-1"/>
+
+				<label for="checkbox-2">Checkbox 2</label>
+				<input type="checkbox" name"checkbox-2" id="checkbox-2"/> 
+
+				<label for="checkbox-3">Chechbox 3</label>
+				<input type="checkbox" name"checkbox-3" id="checkbox-3"/> 
+			</div>
+		</fieldset>
+
+
+		
+		<fieldset>
+			<legend>Input Fields<legen>
+			<!---for general short ext like names, adressses, etc -->
+			<div>
+				<label for"name">Text Input:</label>
+				<input type="text" name="name" id="name" value="" />
+			</div>
+
+		    <!--This is for long form txt like comments or long paragraphs-->	
+			<div>
+				<label for"textarea">Textarea:</label>
+				<textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+
+			</div>
+		</fieldset>
+		
+		<!--Submit buttom-->
+			<div>
+				<input type="submit" value="Submit" />
+			</div>
+
+	<!--Form must encompass all for data to be submitted-->
+	</form>
+
+			
+
+			<!-- Content for Web -->
+
+			<script src="js/script.js"></script>
+	</body>
+</html>
